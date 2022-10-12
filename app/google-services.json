@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "675176829800",
+    "project_id": "test-tiktok-taller",
+    "storage_bucket": "test-tiktok-taller.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:675176829800:android:34f93bb957fb8ecca67cdd",
+        "android_client_info": {
+          "package_name": "com.example.tallerprueba"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "675176829800-av8s9cs0auuvlqae6m2nav9t62d9f4l9.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAgIpwnYeynUqn90rEO3vWO1jcEFxqYObo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "675176829800-av8s9cs0auuvlqae6m2nav9t62d9f4l9.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
