@@ -1,5 +1,6 @@
 package com.example.tallerprueba
 
+import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -25,6 +26,7 @@ class MainActivity : AppCompatActivity() {
                     firebaseAuth.signInWithEmailAndPassword(email, password).addOnCompleteListener {
                         if (it.isSuccessful){
                             Toast.makeText(this, "Bienvenido", Toast.LENGTH_SHORT).show()
+                            saveToPreferences(email)
                             //Mandamos usuario a Login
                             val intent = Intent (this, Dashboard::class.java)
                             startActivity(intent)
@@ -45,4 +47,14 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
     }
+
+    private fun saveToPreferences(email: String) {
+        val correoToSave = email.substringBefore(".")
+        val sharedPreferences = getSharedPreferences("UserPreferences", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.apply{
+            putString("USUARIO", correoToSave)
+        }.apply()
+    }
+
 }

@@ -12,7 +12,7 @@
         android:layout_width="280dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="65dp"
-        android:layout_marginTop="200dp"
+        android:layout_marginTop="160dp"
         android:layout_marginEnd="66dp"
         android:orientation="vertical"
         app:layout_constraintEnd_toEndOf="parent"
@@ -58,8 +58,38 @@
                         android:layout_height="wrap_content"
                         android:hint="Confirme contraseña"
                         android:inputType="textPassword" />
+                    <View
+                        android:layout_width="fill_parent"
+                        android:layout_height="30dp"></View>
+
                 </com.google.android.material.textfield.TextInputLayout>
             </com.google.android.material.textfield.TextInputLayout>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lbNombre"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nombre" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="30dp"></View>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/lbLenguaje"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Lenguaje Favorito" />
         </com.google.android.material.textfield.TextInputLayout>
     </LinearLayout>
 
@@ -75,4 +105,15 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout"
         tools:layout_editor_absoluteX="158dp"
         tools:layout_editor_absoluteY="573dp" />
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="200px"
+        android:layout_height="200px"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
